@@ -1,11 +1,75 @@
-@import 'tailwindcss';
-
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 4px solid #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+  }
+  
+  .logo-large {
+    font-size: 200px;
+    font-family: serif;
+    font-weight: bold;
+    line-height: 0.8;
+  }
+  
+  .content {
+    max-width: 600px;
+    margin-left: 50px;
+  }
+  
+  .content h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0 #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
