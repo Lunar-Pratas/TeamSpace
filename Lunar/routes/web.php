@@ -1,9 +1,13 @@
 <?php
 
-use App\Http\Controllers\TestConroller;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\welcomeController;
+use App\Http\Controllers\criarController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/Lunar', [LunarController::class, 'Lunar'])->name('Lunar');
+Route::get('/Lunar', [welcomeController::class, 'Welcome'])->name('Welcome');
+Route::get('/site', [ProductController::class, 'site'])->name('site');
+Route::get('/criar', [criarController::class, 'criar'])->name('criar');

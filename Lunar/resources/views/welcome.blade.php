@@ -20,8 +20,9 @@
   <img src="{{ asset('logo.png') }}" alt="">
     <div class="content">
       <h1>Transforme a gestão do seu estoque em um processo simples e eficiente.<br>Deixe-nos ajudar a otimizar seu negócio!</h1>
-      <p>A LogisTock oferece soluções práticas e eficientes para gestão de estoque.</p>
+      <p>A LogisTock oferece soluções práticas e eficientes para gestão de estoque.</p><a href="resources/views/site.php">
       <button class="btn" onclick="mostrarMensagem()">VENHA CONHECER NOSSOS SERVIÇOS</button>
+</a>
     </div>
   </div>
 

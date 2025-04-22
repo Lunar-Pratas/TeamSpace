@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
-class TestConroller extends Controller
+class welcomeController extends Controller
 {
-    public function test(){
-        return view("test");
+    public function welcome(){
+        return view('welcome');
     }
 }
