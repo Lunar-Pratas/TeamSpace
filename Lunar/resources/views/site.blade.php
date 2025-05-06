@@ -16,7 +16,7 @@
     </nav>
   </header>
 
-  <hr class="divider" />
+  <hr class="divider"/>
 
   <main>
     <div class="menu-categorias">
