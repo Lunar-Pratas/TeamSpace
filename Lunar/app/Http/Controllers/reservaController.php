@@ -16,7 +16,6 @@ class reservaController extends Controller
         $model_migrations = $model_migrations->all();
 
         return view('index', compact(['model_migrations']));
-
     }
 
     /**
@@ -24,7 +23,7 @@ class reservaController extends Controller
      */
     public function create()
     {
-        return view('site');
+        return view('createView');
     }
 
     /**
@@ -34,6 +33,13 @@ class reservaController extends Controller
     {
         $model_migration = new modelMigration();
         $model_migration->name = $request->name;
+        $model_migration->idade = $request->idade;
+        $model_migration->email = $request->email;
+        $model_migration->senha = $request->senha;
+
+        $model_migration->save();
+
+        return redirect()->route('model_migrations.index');
     }
 
     /**
@@ -41,7 +47,7 @@ class reservaController extends Controller
      */
     public function show(string $id)
     {
-        //
+        echo "Here";
     }
 
     /**
@@ -49,7 +55,10 @@ class reservaController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $model_migration = new modelMigration();
+        $model_migration = $model_migration->where('id', $id)->first();
+
+        return view('createView', compact(['model_migration']));
     }
 
     /**
@@ -57,7 +66,16 @@ class reservaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $model_migration = new modelMigration();
+        $model_migration = $model_migration->where('id', $id)->first();
+        $model_migration->name = $request->name;
+        $model_migration->idade = $request->idade;
+        $model_migration->email = $request->email;
+        $model_migration->senha = $request->senha;
+
+        $model_migration->save();
+
+        return redirect()->route('model_migrations.index');
     }
 
     /**
@@ -65,6 +83,9 @@ class reservaController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+       $model_migration = new modelMigration();
+       $model_migration = $model_migration->where('id', $id)->first();
+       
+       return redirect()->route('model_migrations.index');
     }
 }

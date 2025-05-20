@@ -10,7 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('reservaController', reservaController::class);
+Route::resource('model_migrations', reservaController::class);
 
 Route::get('/Lunar', [welcomeController::class, 'Welcome'])->name('Welcome');
 Route::get('/site', [ProductController::class, 'site'])->name('site.create');

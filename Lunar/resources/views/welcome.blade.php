@@ -10,7 +10,7 @@
   <header>
     <div class="logo">LOGISTOCK</div>
     <nav>
-      <a href="{{ route('') }}">CADASTRE-SE</a>
+      <a href="{{ route('model_migrations.store') }}">CADASTRE-SE</a>
       <a href="#">LISTA USERS</a>
       <a href="#">SOBRE NÓS</a>
       <a href="#">BENEFÍCIOS</a>
