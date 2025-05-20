@@ -24,7 +24,7 @@ class reservaController extends Controller
      */
     public function create()
     {
-        return view('createView');
+        return view('site');
     }
 
     /**
@@ -32,7 +32,8 @@ class reservaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model_migration = new modelMigration();
+        $model_migration->name = $request->name;
     }
 
     /**

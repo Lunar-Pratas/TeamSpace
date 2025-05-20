@@ -13,5 +13,5 @@ Route::get('/', function () {
 Route::resource('reservaController', reservaController::class);
 
 Route::get('/Lunar', [welcomeController::class, 'Welcome'])->name('Welcome');
-Route::get('/site', [ProductController::class, 'site'])->name('site');
+Route::get('/site', [ProductController::class, 'site'])->name('site.create');
 Route::get('/criar', [criarController::class, 'criar'])->name('criar');

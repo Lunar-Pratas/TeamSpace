@@ -10,7 +10,8 @@
   <header>
     <div class="logo">LOGISTOCK</div>
     <nav>
-      <a href="#">CADASTRE-SE</a>
+      <a href="{{ route('') }}">CADASTRE-SE</a>
+      <a href="#">LISTA USERS</a>
       <a href="#">SOBRE NÓS</a>
       <a href="#">BENEFÍCIOS</a>
     </nav>
@@ -21,7 +22,7 @@
     <div class="content">
       <h1>Transforme a gestão do seu estoque em um processo simples e eficiente.<br>Deixe-nos ajudar a otimizar seu negócio!</h1>
       <p>A LogisTock oferece soluções práticas e eficientes para gestão de estoque.</p>
-      <button class="btn" onclick="mostrarMensagem()">VENHA CONHECER NOSSOS SERVIÇOS</></button>
+      <button class="btn"><a href="{{ route('site.create') }}">VENHA CONHECER NOSSOS SERVIÇOS</a></button>
     </div>
   </div>
 
