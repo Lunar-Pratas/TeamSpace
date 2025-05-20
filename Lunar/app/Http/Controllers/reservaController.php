@@ -86,6 +86,8 @@ class reservaController extends Controller
        $model_migration = new modelMigration();
        $model_migration = $model_migration->where('id', $id)->first();
        
+        $model_migration->delete();
+
        return redirect()->route('model_migrations.index');
     }
 }
